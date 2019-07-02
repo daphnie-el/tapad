@@ -1,0 +1,328 @@
+html,
+body {
+    width: 100%;
+    height: 100%;
+    font-family: 'Didact Gothic',
+        sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/* nav bar styling */
+nav {
+    background-color: rgb(27, 0, 54);
+    color: #fff;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    position: fixed;
+}
+
+.nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: space-around;
+}
+
+.navtext {
+    color: white;
+    background-color: transparent;
+    padding: 1em;
+    margin-bottom: 0;
+}
+
+.navtext:hover {
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.navtext:hover a,
+.fa-search:hover,
+span:hover {
+    color: #f06;
+    text-decoration: none;
+    background-color: #fff;
+}
+
+.fa-search {
+    width: 50px;
+    text-align: center;
+    font-size: 1em;
+}
+
+.tapad {
+    font-weight: 900;
+    font-size: 2.4em;
+    font-family: 'FuturaPTBook', 'Fascinate', cursive;
+    margin-left: auto;
+    margin-right: auto;
+    color: #fff;
+}
+
+span {
+    background-color: transparent;
+    text-align: center;
+    padding-top: 15px;
+}
+
+/* styles the demo part  */
+#demo {
+    background-color: #f06;
+}
+
+#demo:hover {
+    background-color: #fff;
+    color: #f06;
+}
+
+/* pink banner styling (first div) */
+.banner-pink {
+    background: -webkit-linear-gradient(-148deg, rgb(44, 150, 255) 10%, rgb(255, 41, 100) 100%);
+    color: #fff;
+    text-align: center;
+    font-family: inherit;
+    font-weight: 900;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    letter-spacing: 0.6em;
+}
+
+.bp-small {
+    font-family: inherit;
+    font-size: 2em;
+}
+
+h1 {
+    font-size: 5em;
+    margin: 0.2em 0px;
+}
+
+.banner-pink p {
+    font-size: 2em;
+    font-weight: 300;
+}
+
+#play {
+    letter-spacing: 0em;
+
+}
+
+/* secod div with bluish background */
+.about {
+    position: relative;
+    height: 100%;
+}
+
+.banner-blue {
+    color: #fff;
+    text-align: center;
+    margin-top: 4em;
+    margin-right: 2em;
+    margin-left: 2em;   
+}
+
+.banner-blue h3 {
+    font-size: 3em;
+}
+
+.banner-blue h2 {
+    font-size: 4em;
+    font-weight: 500;
+}
+
+.banner-blue p {
+    line-height: 2;
+    letter-spacing: 1px;
+}
+
+.btn {
+    background-color: transparent;
+    color: #fff;
+    border: 2px solid white;
+    font-size: 1.4em;
+    border-radius: unset;
+}
+
+.btn:hover {
+    background-color: #fff;
+    color: black;
+}
+
+.image {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+/* area with 4 grids */
+.about {
+    /* height: 100%; */
+    position: relative;
+}
+
+.conversation {
+    background-color: #f0f2f2;
+    width: 100%;
+    height: auto;
+    padding: 50px 0px;
+}
+
+.keep,
+.headtext {
+    color: rgb(27, 0, 54);
+    text-align: center;
+}
+
+.keep {
+    padding-bottom: 50px;
+    font-weight: 600;
+}
+
+.headtext {
+    padding-top: 1.3em;
+    padding-bottom: 1.3em;
+    font-weight: 500;
+}
+
+.gridarea {
+    display: grid;
+    background-color: #f3f3f3;
+    grid-template-columns: 1fr 4fr 4fr 1fr;
+    grid-template-rows: 3fr 3fr;
+    grid-row-gap: 4em;
+    grid-template-areas: ". content image ."
+        ". content-2 image-2 .";
+    
+}
+
+.text {
+    color: #6d6e70;
+    margin-left: 3em;
+    margin-right: 3em;
+    letter-spacing: 1px;
+    padding-bottom: 2em;
+}
+
+.learn {
+    border: 2px solid skyblue;
+    color: #87ceeb;
+    background-color: transparent;
+    border-radius: unset;
+    font-size: 1.3em;
+    margin-left: 2em;
+}
+
+.learn:hover {
+    background-color: #87ceeb;
+    color: #fff;
+}
+
+.telco,
+.graph {
+    background-color: #fff;
+    text-align: left;
+    padding-bottom: 1em;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.telcoimg,
+.graphimg {
+    width: 250px;
+    height: 100%;
+    margin-left: 8em;
+}
+
+.graph {
+    grid-area: content;
+}
+
+.telco {
+    grid-area: content-2;
+}
+
+.graphone {
+    background: linear-gradient(36deg, rgba(153, 0, 102, 1) 0%, rgba(44, 150, 255, 1) 100%);
+    grid-area: image;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.telcoone {
+    grid-area: image-2;
+    background: linear-gradient(36deg, rgba(44, 150, 255, 1) 0%, rgba(18, 8, 65, 1) 100%);
+    background-position: cover;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* FOOTER STYLING */
+.footer {
+    background-color: #120841;  
+    width: 100%;
+    height: auto;
+}
+
+footer a:hover {
+    color: rgba(245, 245, 245, 0.75);
+    text-decoration: none;
+}
+
+.footer h3 {
+    margin-left: 2.5em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+}
+
+.footlink {
+    margin-bottom: 2em;
+}
+.category {
+    color: pink;
+    font-weight: 900;
+    font-size: 1em;
+    letter-spacing: 1px;
+    line-height: 1;
+}
+
+.footext {
+    font-size: 1em;
+    color: rgba(245, 245, 245, 0.75);
+}
+
+/* COPYRIGHT STYLING */
+.bottom-copyright {
+    margin-top: 2em;
+}
+.copyright {
+    text-align: left;
+    font-size: 0.7em;
+    font-weight: 400;
+    color: rgba(245, 245, 245, 0.75);
+
+}
+
+.flogo {
+    width: 75px;
+    height: auto;
+}
+
+.flogo-1 {
+    width: 40px;
+    height: auto;
+}
+
+.fab {
+    color: rgba(245, 245, 245, 1);
+    letter-spacing: 3px;
+    font-size: 15px;
+}
+
+.brand {
+    background-color: rgba(44, 150, 255, 1);
+    border-radius: 50%;
+    padding: 5px;
+}
